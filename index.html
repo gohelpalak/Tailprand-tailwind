@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailorand Tailoring</title>
+    <script src="js/flowbite.min.js"></script>
+    <script src="js/tailwind.css"></script>
+    <link href="css/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- <script src="js/tailwind.css"></script> -->
+
+
+    <footer class="bg-white  shadow  dark:bg-black">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+      </div>
+  </footer>
+  
+<nav class="bg-white border-gray-200 sticky w-full  uppercase  top-0 z-10" style="font-family: Outfit;">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="img/logo.png" class="h-12" alt="Flowbite Logo" />
+        
+    </a>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto " id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+        <li>
+          <a href="#" class="block py-2 px-3 text-[#91765a] bg-blue-700 rounded md:bg-transparent  md:p-0  text-base" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#91765a] md:p-0 dark:text-black md:dark:hover:text-[#91765a] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-base">About</a>
+        </li>
+       
+            
+<button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-black md:hover:text-[#91765a]  text-center inline-flex items-center text-base"  type="button">Services <svg class="w-2.5 h-2.5 ms-3 mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100  shadow w-44 dark:bg-[#14100c]">
+      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+        </li>
+      </ul>
+  </div>
+  
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-base">Wedding</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-base">Pricing</a>
+        </li>
+        <li>
+          
+          <button id="dropdownDelayButton2" data-dropdown-toggle="dropdownDelay2" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-black   text-center inline-flex items-center text-base"  type="button">Pages <svg class="w-2.5 h-2.5 ms-3 mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+            </button>
+            
+            <!-- Dropdown menu -->
+            <div id="dropdownDelay2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-[#14100c]">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                  </li>
+                </ul>
+            </div>
+      </li>
+      <li>
+        <button id="dropdownDelayButton3" data-dropdown-toggle="dropdownDelay3" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-black  text-center inline-flex items-center text-[14px]"  type="button">Blog <svg class="w-2.5 h-2.5 ms-3 mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+          </button>
+          
+          <!-- Dropdown menu -->
+          <div id="dropdownDelay3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-[#14100c]">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                </li>
+              </ul>
+          </div>
+    </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+    <section class=" relative bg-center bg-no-repeat bg-fixed  bg-gray-300 bg-blend-multiply " style="background-image: url('img/3a.jpg');" >
+  <div class="px-4 mx-auto  max-w-full text-center py-24 lg:py-56" style="padding-bottom: 27rem;">
+    <h4 class="text-white tracking-wide text-[13px]" style="font-family: Outfit;"> Tailors to Trust</h4>
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl" style="font-family: Bodoni Moda;">Men's Wear Alterations</h1>
+      <h2 class=" text-6xl mb-8 italic text-[#91765a] " style="font-family: Bodoni Moda; ">and Tailoring</h2>
+       <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+         
+          <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400 bg-[#91765A]">
+            Make Appointment
+          </a>  
+      </div>
+  </div>
+</section>
+
+<section class=" about section-padding py-32 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mb-[30px] opacity-0 fadeInUp animated " data-animate-effect=" fadeInUp">
+        <div class="section-head mb-[15px] relative">
+           <div class="section-subtitle text-[#91765a] text-[13px] font-medium mg-0 uppercase tracking-[0.125em]">Tailors to Trust</div>
+           <div class="section-title  text-[45px] leading-[1.2em] font-medium text-[#14100c]" style="font-family: Bodoni Moda;">
+            Tailorand 
+            <span class="italic text-[#91765a]" style="font-family: Bodoni Moda;">Tailoring</span>
+           </div>
+        </div>
+        <p class="text-[15px] font-light leading-[1.75em] text-[#625c56] mb-5" style="font-family: 'Outfit';">Tailor sit amet risus ac dui auctor posuere sit amet eget libero. Ut lacinia lectusan risus facilisis, semper consequat sem fringilla. Etiam et tincidunt felis. Quisque at maximus nulla dictum vestibulum sed interdum neque dictum.</p>
+        <p class="text-[15px] font-light leading-[1.75em] text-[#625c56] mb-5" style="font-family: 'Outfit';">Tailiorand lobortis sollicitudin purus vel posuere. Maecenas auctor, turpis quis mattis tristique, ligula dolor vestibulum risus, nec ullamcorper justo dolor soda lorem. Sed interdum arcu ac metus mollis venenatis.</p>
+        <ul class="about-list list-unstyled relative block mb-[15px] pl-0 list-none">
+          <li class="relative flex items-center mb-2.5">
+            <div class="about-list-icon flex items-center"><i class="fa-solid fa-check text-[#91765a]"></i>
+              <p class="text-[15px] ml-2.5 font-light leading-[1.75em] text-[#625c56] " style="font-family: 'Outfit';">Ten decades of experience in luxury tailoring</p>
+              </div>
+          </li>
+          <li class="relative flex items-center mb-2.5">
+            <div class="about-list-icon flex items-center"><i class="fa-solid fa-check text-[#91765a]"></i>
+              <p class="text-[15px] ml-2.5 font-light leading-[1.75em] text-[#625c56] " style="font-family: 'Outfit';">We care about our customers satisfaction</p>
+               </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 animate-box fadeInUp animated" data-animate-effect="fadeInUp"> 
+        <div class="row img-twice relative h-full">
+          <div class="col-6 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+            <img  class="img-fluid max-w-full h-auto px-5" src="img/t1.jpg" alt="">
+          </div>
+          <div class="col-6 self-end animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+            <img class="img-fluid max-w-full h-auto  px-5" src="img/t3.jpg" alt="">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="services section-padding bg-lightbrown relative py-[120px] bg-[#f2efeb] fadeInUp animated" data-animate-effect="fadeInUp">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-head text-center relative mb-10 text-center">
+          <div class="section-subtitle text-[#91765a] text-[13px] font-medium mb-0 uppercase tracking-[2px]">What we do</div>
+          <div class="section-title text-[45px] leading-[1.2em] font-medium text-[#14100c]" style="font-family: Bodoni Moda;">Our
+          <span class=" italic text-[#91765a]" style="font-family: Bodoni Moda;">Services</span>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+       
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide "><img class="w-8/12" src="img/3.jpg" alt="">
+            <div class="caption right-0  bg-[#fbf8f4] absolute top-1/2 w-6/12 text-left" style="padding: 60px 45px; transform: translate(0, -50%);">
+            <div class="title leading-[1.2em] text-[30px] font-medium text-[#14100c] mb-5" style="font-family: Bodoni Moda;">Men’s Tailoring</div>
+            <p class="text-[#625c56] text-[15px] font-light leading-[1.75em] mb-5 " style="font-family: 'Outfit';">Bespoke Tailor offers a full range of men’s tailoring services including suits, jackets, shirts, ties and accessories. Miss orci elit silver tristiue in the dream vitaen aliuam lorem tincidunt felis sed gravida aluam the neque miss blue hendren mavition.</p>
+            <a href="#" class="button-1  ">Discover </a>
+
+          </div> 
+          
+          </div>
+          <div class="swiper-slide "><img class="w-8/12" src="img/6.jpg" alt="">
+            <div class="caption right-0  bg-[#fbf8f4] absolute top-1/2 w-6/12 text-left" style="padding: 60px 45px; transform: translate(0, -50%);">
+            <div class="title leading-[1.2em] text-[30px] font-medium text-[#14100c] mb-5" style="font-family: Bodoni Moda;">Wedding Dress Alterations</div>
+            <p class="text-[#625c56] text-[15px] font-light leading-[1.75em] mb-5 " style="font-family: 'Outfit';">Bespoke Tailor offers a complete wedding dress alterations and repair service. Alisuen miss orci elit gene on tristique in the dream vitaen aliuam lorem tincidunt felis sed gravida aliquam the neque miss blue hendren mavition duru sapien mana amenta.</p>
+            <a href="#" class="button-1  ">Discover </a>
+            </div>
+            </div>
+
+             <div class="swiper-slide "><img class="w-8/12" src="img/20.jpg" alt="">
+            <div class="caption right-0 left-[auto] bg-[#fbf8f4] absolute top-1/2 w-6/12 text-left" style="padding: 60px 45px; transform: translate(0, -50%);">
+            <div class="title leading-[1.2em] text-[30px] font-medium text-[#14100c] mb-5" style="font-family: Bodoni Moda;">Clothing Design & Repairs</div>
+            <p class="text-[#625c56] text-[15px] font-light leading-[1.75em] mb-5 " style="font-family: 'Outfit';">For the best in unique or custom hand-made pieces. Carefully designed to be versatile and easy to match to any outfit. Lorem tincidunt felis sed gravida aliquam the neque miss blue hendren mavition duru sapien mana amenta sapien.</p>
+            <a href="#" class="button-1  ">Discover </a>
+            </div>
+            </div>
+            <div class="swiper-slide "><img class="w-8/12" src="img/17.jpg" alt="">
+              <div class="caption right-0 left-[auto] bg-[#fbf8f4] absolute top-1/2 w-6/12 text-left" style="padding: 60px 45px; transform: translate(0, -50%);">
+              <div class="title leading-[1.2em] text-[30px] font-medium text-[#14100c] mb-5" style="font-family: Bodoni Moda;">Ladies Tailoring</div>
+              <p class="text-[#625c56] text-[15px] font-light leading-[1.75em] mb-5 " style="font-family: 'Outfit';">From a sleek, satin evening dress with exquisite detail, to a sharp classical tailored suit. Lorem tincidunt felis sed gravida aliquam the neque miss blue hendren mavition duru sapien mana amenta blue hendren mavition duru sapien mana the mollis.</p>
+              <a href="#" class="button-1  ">Discover </a>
+              </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="swiper-pagination mb-10"></div>
+        
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="services-box my-[30px]">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 animate-box fadeInUp animated" data-animate-effect="fadeInUp" >
+        <div class="item flex mt-5">
+          <span class=" icon flaticon-money inline-block  fa-solid fa-hand-holding-dollar text-[#91765a] mr-[30px]">
+          </span>
+          <div class="cont">
+            <h5 class="mb-2.5 text-[24px] font-medium leading-[1.25em] text-[#14100c]" style="font-family: Bodoni Moda;">Best Price</h5>
+            <p class="text-[15px] font-light leading-[1.75em] text-[#625c56] mb-5 "  style="font-family: 'Outfit';">Best price nisl quam nestibulum drana elementum sceisue the monte.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 animate-box fadeInUp animated" data-animate-effect="fadeInUp" >
+        <div class="item flex mt-5">
+          <span class=" icon flaticon-money inline-block  fa-solid fa-vest text-[#91765a] mr-[30px]">
+          </span>
+          <div class="cont">
+            <h5 class="mb-2.5 text-[24px] font-medium leading-[1.25em] text-[#14100c]" style="font-family: Bodoni Moda;">Best Fabric</h5>
+            <p class="text-[15px] font-light leading-[1.75em] text-[#625c56] mb-5 "  style="font-family: 'Outfit';">Best fabric nisl quam nestibulum drana odio elementum monte.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 animate-box fadeInUp animated" data-animate-effect="fadeInUp" >
+        <div class="item flex mt-5">
+          <span class=" icon flaticon-money inline-block  fa-solid fa-hat-cowboy-side text-[#91765a] mr-[30px] ml-[21px]">
+          </span>
+          <div class="cont">
+            <h5 class="mb-2.5 text-[24px] font-medium leading-[1.25em] text-[#14100c]" style="font-family: Bodoni Moda;">Best Tailors</h5>
+            <p class="text-[15px] font-light leading-[1.75em] text-[#625c56] mb-5 "  style="font-family: 'Outfit';">Best tailors nisl quam nestibulum drana odio elementum sceisue the can.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section >
+
+
+
+<!-- Testimonials -->
+<section class="section-padding py-[120px] ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-head relative mb-10 ">
+          <div class="section-subtitle text-[#91765a] text-[13px] font-medium mb-0  uppercase tracking-[2px]">Testimonials</div>
+          <div class="section-title text-[45px] leading-[1.2em] font-medium text-[#14100c] " style="font-family: Bodoni Moda;"> What Our
+          <span class="text-[#91765a;] italic text-[45px] leading-[1.2em] font-medium " style="font-family: Bodoni Moda;">Clients Say</span> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="testimonials left relative mb-0">
+          <figure class="ml-0 relative w-[66.666667%] overflow-hidden"><img src="img/19.jpg" alt="" class="img-fluid"></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio Gallery -->
+<section class="section-padding bg-lightbrown py-[120px] bg-[#f2efeb]">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12 text-center">
+          <div class="section-head relative mb-[40px]">
+            <div class="section-subtitle text-[#91765a] text-[13px] font-medium mb-0 uppercase tracking-[2px]">Our Portfolio</div>
+            <div class="section-title text-[45px] leading-[1.2em] font-medium text-[#14100c] " style="font-family: Bodoni Moda;"> Tailor Gallery</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 gallery-item relative pb-[15px] pt-0 mt-0 px-3.5">
+        <a href="img/1.jpg" title="" class="img-zoom">
+          <div class="gallery-box relative overflow-hidden">
+            <div class="gallery-img relative overflow-hidden">
+              <img src="img/1.jpg"  class="img-fluid mx-auto block max-w-full h-auto " alt="work img">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4 gallery-item relative pb-[15px] pt-0 mt-0 px-3.5">
+        <a href="img/2.jpg" title="" class="img-zoom">
+          <div class="gallery-box relative overflow-hidden">
+            <div class="gallery-img relative overflow-hidden">
+              <img src="img/2.jpg"  class="img-fluid mx-auto block max-w-full h-auto " alt="work img">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4 gallery-item relative pb-[15px] pt-0 mt-0 px-3.5">
+        <a href="img/3.jpg" title="" class="img-zoom">
+          <div class="gallery-box relative overflow-hidden">
+            <div class="gallery-img relative overflow-hidden">
+              <img src="img/3.jpg"  class="img-fluid mx-auto block max-w-full h-auto " alt="work img">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4 gallery-item relative pb-[15px] pt-0 mt-0 px-3.5">
+        <a href="img/4.jpg" title="" class="img-zoom">
+          <div class="gallery-box relative overflow-hidden">
+            <div class="gallery-img relative overflow-hidden">
+              <img src="img/4.jpg"  class="img-fluid mx-auto block max-w-full h-auto " alt="work img">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4 gallery-item relative pb-[15px] pt-0 mt-0 px-3.5">
+        <a href="img/11.jpg" title="" class="img-zoom">
+          <div class="gallery-box relative overflow-hidden">
+            <div class="gallery-img relative overflow-hidden">
+              <img src="img/11.jpg"  class="img-fluid mx-auto block max-w-full h-auto " alt="work img">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4 gallery-item relative pb-[15px] pt-0 mt-0 px-3.5">
+        <a href="img/25.jpg" title="" class="img-zoom">
+          <div class="gallery-box relative overflow-hidden">
+            <div class="gallery-img relative overflow-hidden">
+              <img src="img/25.jpg"  class="img-fluid mx-auto block max-w-full h-auto " alt="work img">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<!-- Video -->
+
+<section class="section-padding video-wrapper video bg-img  relative bg-center bg-no-repeat bg-fixed   px-0 bg-cover bg-gray-300 bg-blend-multiply pt-[100px] pb-[80px] " data-overlay-dark="4" style="background-image: url('img/banner.png'); " >
+  <div class="px-4 mx-auto  max-w-full text-center  " >
+    <div class="container">
+      <div class="row justify-center">
+        <div class="col-6">
+          <div class="section-head text-center relative ">
+            <div class="section-title white text-[45px] leading-[1.2em] font-medium text-[#fff]" style="font-family: Bodoni Moda;">
+              Watch Our
+               <span class=" italic text-[#91765a]" style="font-family: Bodoni Moda;">Tailorand</span>
+               <br>
+               Promo Video
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a class="vid relative z-[8] inline-block " href="https://www.youtube.com/watch?v=mar7PWg5Znw" style="text-decoration: none;">
+            <div class="vid-butn">
+              <span class="icon">
+                <i class="fa-solid fa-play"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services - We Also Offer -->
+  <section class="services2 section-padding py-[120px] px-0 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 animate-box fadeInUp animated opacity-0" data-animate-effect="fadeInUp">
+          <div class="section-head text-center relative mb-[40px] ">
+            <div class="section-subtitle text-[#91765a] text-[13px] font-medium mb-0 uppercase tracking-[2px]">Our Services</div>
+            <div class="section-title text-[45px]  leading-[1.2em] font-medium text-[#14100c]" style="font-family: Bodoni Moda;">We Also Offer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 animate-box fadeInUp animated opacity-0 px-3.5" data-animate-effect="fadeInUp">
+          <div class="item  bg-[#f2efeb] py-[45px] px-[20px] relative z-[2] mb-[30px] leading-none text-center">
+            <a href="#">
+              <span class="icon fa-solid fa-shirt text-[60px] text-[#91765a] leading-none mb-[10px] inline-block">
+              </span>
+              <h5 class="text-[21px] text-[#14100c] mb-0">Jacket Alterations</h5>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 animate-box fadeInUp animated opacity-0 px-3.5" data-animate-effect="fadeInUp">
+          <div class="item bg-[#f2efeb] py-[45px] px-[20px] relative z-[2] mb-[30px] leading-none text-center">
+            <a href="#">
+              <span class="icon fa-brands fa-cotton-bureau text-[60px] text-[#91765a] leading-none mb-[10px] inline-block ">
+              </span>
+              <h5 class="text-[21px] text-[#14100c] mb-0">Designer Alterations</h5>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 animate-box fadeInUp animated opacity-0  px-3.5" data-animate-effect="fadeInUp">
+          <div class="item bg-[#f2efeb] py-[45px] px-[20px] relative z-[2] mb-[30px] leading-none text-center">
+            <a href="#">
+              <span class="icon fa-solid fa-person-dress-burst text-[60px] text-[#91765a] leading-none mb-[10px] inline-block ">
+                
+              </span>
+              <h5 class="text-[21px] text-[#14100c] mb-0">Bridal Alterations</h5>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 animate-box fadeInUp animated opacity-0  px-3.5" data-animate-effect="fadeInUp">
+          <div class="item bg-[#f2efeb] py-[45px] px-[20px] relative z-[2] mb-[30px] leading-none text-center">
+            <a href="#">
+              <span class="icon fa-brands fa-pagelines text-[60px] text-[#91765a] leading-none mb-[10px] inline-block ">
+                
+              </span>
+              <h5 class="text-[21px] text-[#14100c] mb-0">Wear & Gown Alterations</h5>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 animate-box fadeInUp animated opacity-0  px-3.5" data-animate-effect="fadeInUp">
+          <div class="item bg-[#f2efeb] py-[45px] px-[20px] relative z-[2] mb-[30px] leading-none text-center">
+            <a href="#">
+              <span class="icon fa-solid fa-hat-cowboy-side text-[60px] text-[#91765a] leading-none mb-[10px] inline-block "></span>
+              <h5 class="text-[21px] text-[#14100c] mb-0">Dress Alterations</h5>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 animate-box fadeInUp animated opacity-0  px-3.5" data-animate-effect="fadeInUp">
+          <div class="item bg-[#f2efeb] py-[45px] px-[20px] relative z-[2] mb-[30px] leading-none text-center">
+            <a href="#">
+              <span class="icon fa-solid fa-vest text-[60px] text-[#91765a] leading-none mb-[10px] inline-block "></span>
+              <h5 class="text-[21px] text-[#14100c] mb-0">Dress Repair</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pricing-book tabs position-re outline-0 relative">
+    <div class=" background bg-img  p-[120px] bg-cover bg-no-repeat bg-fixed" style="background-image: url('img/28.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-head text-center relative" style="margin: 0 auto 40px;">
+          <div class="section-subtitle text-[#91765a] text-[13px] font-medium mb-0 uppercase tracking-[2px]">  Pricing Plan </div>
+          <div class="section-title text-[#fff] text-[45px] leading-[1.2em] font-medium " style="font-family: Bodoni Moda;">Pricing
+          <span class="italic text-[#91765a]" style="font-family: Bodoni Moda;">List</span>
+         </div>
+        </div>
+        </div>
+      </div>
+      <div class="row justify-center">
+        <div class="col-10">
+          <div class="tab-links mb-[60px]">
+            <ul class="text-center mb-0 p-0 ext-center list-none">
+              <li class="item-link current text-[#91765a] pointer-events-none pr-5 relative cursor-pointer  mx-2.5  font-light text-[18px] inline-block " data-tab="tab-1" style="font-family: Bodoni Moda;"> Trouser</li>
+              <li class="item-link  pr-5 relative cursor-pointer mx-2.5 font-light text-[18px] text-[#fff] inline-block" data-tab="tab-2">  Jackets & Coats</li>
+              <li class="item-link  pr-5 relative cursor-pointer mx-2.5 font-light text-[18px] text-[#fff] inline-block" data-tab="tab-3">   Dresses & Skirts  </li>
+              <li class="item-link  pr-5 relative cursor-pointer mx-2.5 font-light text-[18px] text-[#fff] inline-block" data-tab="tab-4">    Jeans </li>
+              <li class="item-link  pr-5 relative cursor-pointer mx-2.5 font-light text-[18px] text-[#fff] inline-block" data-tab="tab-5">     Wedding Dresses  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-center">
+        <div class="col-10">
+            <div class="position-re relative">
+              <div class="tab-content current block" id="tab-1">
+                <div class="row  justify-center">
+                  <div class="col-5">
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> Shorten from</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $15.00</div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> New Zip</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $12.00</div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> New Hook and bar</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $15.00</div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="menu-list  ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> Take in/Let out at waist</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $18.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-5 offset-md-1 ml-[8.33333333%]">
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light">Seam repair from</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $10.00</div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> Let out at waist</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $15.00</div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> New Zip</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $12.00</div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="menu-list mb-[15px] ">
+                      <div class="item leading-[35px] ">
+                        <div class="flex ">
+                          <div class="title shrink-0 text-[#fff] text-[15px]  font-light"> New Hook</div>
+                          <div class="dots grow relative mx-[20px] ::after"></div>
+                          <div class="price ml-auto text-[15px] text-[#91765a]  font-light"> $18.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>        
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+     
+    });
+</script>
+
+</body>
+</html>
